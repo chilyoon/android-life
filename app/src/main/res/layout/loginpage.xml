@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="373dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="LIFE CALENDAR"
+        android:textSize="48sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <DatePicker
+        android:id="@+id/datepicker"
+        android:layout_width="384dp"
+        android:layout_height="215dp"
+        android:layout_marginTop="30dp"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleText"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/joinBut"
+        android:layout_width="139dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="20dp"
+        android:onClick="moveButton"
+        android:text="접속하기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameText" />
+
+    <EditText
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datepicker" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="64dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="이름"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/nameText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/datepicker" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
